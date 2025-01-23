@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по ПДД для пользователей СИМ</title>
+    <meta name="description" content="Пройдите тест на знание правил дорожного движения для пользователей средств индивидуальной мобильности (СИМ).">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Тест по ПДД для пользователей СИМ</h1>
+            <nav>
+                <ul>
+                    <z><a href="index.html">Главная</a></li>
+                    <z><a href="rules.html">Правила</a></li>
+                    <z><a href="choose-test.html">Тесты</a></li>
+                    <z><a href="instructions.html">Инструкция</a></li>
+                    <z><a href="privacy.html">Политика конфиденциальности</a></li>
+                </ul> 
+            </nav>
+
+        </div>
+    </header>
+
+    <section id="test-content">
+        <div class="container">
+            <h2>Тест: Основы ПДД для СИМ</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <h3>1. Что такое "Проезжая часть"?</h3>
+                    <label>
+                        <input type="radio" name="q1" value="a"> Элемент для остановки автомобилей
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> Элемент дороги для велосипедистов
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> Часть дороги, предназначенная для движения безрельсовых транспортных средств
+                    </label>
+                    <p class="feedback hidden" id="feedback-q1"></p>
+                </div>
+
+                <!-- Вопрос 2 -->
+                <div class="question">
+                    <h3>2. Какой штраф ожидает водителя СИМ, если он был пьян и нарушил ПДД?</h3>
+                    <label>
+                        <input type="radio" name="q2" value="a"> 800—1000 ₽
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> 1000—1500 ₽
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> 1500—2000 ₽
+                    </label>
+                    <p class="feedback hidden" id="feedback-q2"></p>
+                </div>
+
+                <!-- Вопрос 3 -->
+                <div class="question">
+                    <h3>3. Как должны вести себя водители СИМ в отношении дорожных знаков и разметки?</h3>
+                    <label>
+                        <input type="radio" name="q3" value="a"> Игнорировать их при нехватке времени
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> Следовать всем знакам и разметке
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> Следить только за знаками, касающимися пешеходов
+                    </label>
+                    <p class="feedback hidden" id="feedback-q3"></p>
+                </div>
+
+                <!-- Вопрос 4 -->
+                <div class="question">
+                    <h3>4. Можно ли ехать на СИМ, не держась за рулем?</h3>
+                    <label>
+                        <input type="radio" name="q4" value="a"> Да, это не важно
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b"> Разрешено, если скорость низкая
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c"> Нет, это запрещено
+                    </label>
+                    <p class="feedback hidden" id="feedback-q4"></p>
+                </div>
+
+                <!-- Вопрос 5 -->
+                <div class="question">
+                    <h3>5. Дети от 7 до 14 лет могут ездить на СИМ по:</h3>
+                    <label>
+                        <input type="radio" name="q5" value="a"> Тротуарам, пешеходным и велопешеходным дорожкам
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b"> Только по проезжей части
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c"> Только по тротуарам
+                    </label>
+                    <p class="feedback hidden" id="feedback-q5"></p>
+                </div>
+
+                <!-- Вопрос 6 -->
+                <div class="question">
+                    <h3>6. Что такое "Велосипедная дорожка"?</h3>
+                    <label>
+                        <input type="radio" name="q6" value="a"> Отдельный элемент дороги для велосипедистов и СИМ, обозначенный знаком 4.4.1
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="b"> Элемент дороги для автомобилей
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="c"> Обычная тропинка для пешеходов
+                    <p class="feedback hidden" id="feedback-q6"></p>
+                </div>
+
+                <!-- Вопрос 7 -->
+                <div class="question">
+                    <h3>7. Как правильно пересекать проезжую часть на перекрестке?</h3>
+                    <label>
+                        <input type="radio" name="q7" value="a"> Спешившись и ведя СИМ рядом
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="b"> Бегом, чтобы быстрее пересечь
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="c"> На СИМ, если нет машин
+                    </label>
+                    <p class="feedback hidden" id="feedback-q7"></p>
+                </div>
+
+                <!-- Вопрос 8 -->
+                <div class="question">
+                    <h3>8. Как классифицирует ПДД человека, управляющего СИМ?</h3>
+                    <label>
+                        <input type="radio" name="q8" value="a"> Как пешехода или велосипедиста
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="b"> Как пассажира
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="c"> Как водителя
+                    </label>
+                    <p class="feedback hidden" id="feedback-q8"></p>
+                </div>
+
+                <!-- Вопрос 9 -->
+                <div class="question">
+                    <h3>9. В каких случаях запрещено передвигаться по проезжей части?</h3>
+                    <label>
+                        <input type="radio" name="q9" value="a"> Если нет звукового сигнала
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="b"> Если нет тормозов, звукового сигнала, световозвращателей и фары
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="c"> Если идет дождь
+                    </label>
+                    <p class="feedback hidden" id="feedback-q9"></p>
+                </div>
+
+                <!-- Вопрос 10 -->
+                <div class="question">
+                    <h3>10. Какое правило действуют в населенных пунктах??</h3>
+                    <label>
+                        <input type="radio" name="q10" value="a"> Можно превышать скорость
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="b"> Необходимо соблюдать лимиты скорости
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="c"> Скорость не контролируется
+                    </label>
+                    <p class="feedback hidden" id="feedback-q10"></p>
+                </div>
+
+                <button type="submit" class="button">Проверить результаты</button>
+            </form>
+
+            <div id="results" class="hidden">
+                <h3>Ваш результат:</h3>
+                <p id="score"></p>
+                <a href="choose-test.html" class="button">Выбрать другой тест</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Изучение ПДД для пользователей СИМ. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>

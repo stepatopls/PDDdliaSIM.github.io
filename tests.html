@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тесты по ПДД для пользователей СИМ</title>
+    <meta name="description" content="Пройдите тесты на знание правил дорожного движения для пользователей средств индивидуальной мобильности (СИМ).">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Тесты по ПДД для пользователей СИМ</h1>
+            <nav>
+                <ul>
+                    <z><a href="index.html">Главная</a></li>
+                    <z><a href="rules.html">Правила</a></li>
+                    <z><a href="choose-test.html">Тесты</a></li>
+                </ul> 
+        </div>
+    </header>
+
+    <section id="tests-content">
+        <div class="container">
+            <h2>Проверьте свои знания</h2>
+            <form id="quiz-form">
+                <!-- Вопрос 1 -->
+                <div class="question">
+                    <h3>1. Где разрешено передвигаться на электросамокате?</h3>
+                    <label>
+                        <input type="radio" name="q1" value="a"> На проезжей части
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> На тротуаре или велодорожке
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> На автомагистрали
+                    </label>
+                </div>
+
+                <!-- Вопрос 2 -->
+                <div class="question">
+                    <h3>2. Какая максимальная скорость разрешена для СИМ в пешеходных зонах?</h3>
+                    <label>
+                        <input type="radio" name="q2" value="a"> 40 км/ч
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> 20 км/ч
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> 60 км/ч
+                    </label>
+                </div>
+
+                <!-- Вопрос 3 -->
+                <div class="question">
+                    <h3>3. Кто имеет приоритет на тротуаре?</h3>
+                    <label>
+                        <input type="radio" name="q3" value="a"> Пользователи СИМ
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> Пешеходы
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> Велосипедисты
+                    </label>
+                </div>
+
+                <!-- Вопрос 4 -->
+                <div class="question">
+                    <h3>4. Что обязательно для пользователей СИМ?</h3>
+                    <label>
+                        <input type="radio" name="q4" value="a"> Использование шлема
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b"> Наличие водительских прав
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c"> Регистрация устройства
+                    </label>
+                </div>
+
+                <!-- Вопрос 5 -->
+                <div class="question">
+                    <h3>5. Можно ли управлять СИМ в состоянии опьянения?</h3>
+                    <label>
+                        <input type="radio" name="q5" value="a"> Да, если скорость низкая
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b"> Нет, это запрещено
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c"> Только на тротуаре
+                    </label>
+                </div>
+
+                <button type="submit" class="button">Проверить результаты</button>
+            </form>
+
+            <div id="results" class="hidden">
+                <h3>Ваш результат:</h3>
+                <p id="score"></p>
+                <a href="index.html" class="button">Вернуться на главную</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Изучение ПДД для пользователей СИМ. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

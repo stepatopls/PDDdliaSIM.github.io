@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по ПДД для пользователей СИМ</title>
+    <meta name="description" content="Пройдите тест на знание правил дорожного движения для пользователей средств индивидуальной мобильности (СИМ).">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Тест по ПДД для пользователей СИМ</h1>
+            <nav>
+                <ul>
+                    <z><a href="index.html">Главная</a></li>
+                    <z><a href="rules.html">Правила</a></li>
+                    <z><a href="choose-test.html">Тесты</a></li>
+                    <z><a href="instructions.html">Инструкция</a></li>
+                    <z><a href="privacy.html">Политика конфиденциальности</a></li>
+                </ul> 
+            </nav>
+
+        </div>
+    </header>
+
+    <section id="test-content">
+        <div class="container">
+            <h2>Тест: Основы ПДД для СИМ</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <h3>1. Какой возрастной группе разрешено передвигаться на СИМ по тротуарам только в сопровождении взрослых?</h3>
+                    <label>
+                        <input type="radio" name="q1" value="a"> Младше 7 лет
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> От 7 до 14 лет
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> Старше 14 лет
+                    </label>
+                    <p class="feedback hidden" id="feedback-q1"></p>
+                </div>
+
+                <!-- Вопрос 2 -->
+                <div class="question">
+                    <h3>2. Разрешено ли буксировать другие СИМ или велосипеды?</h3>
+                    <label>
+                        <input type="radio" name="q2" value="a"> Да, это разрешено для всех
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> Нет, если это не предусмотрено конструкцией
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> Только в экстренных случаях
+                    </label>
+                    <p class="feedback hidden" id="feedback-q2"></p>
+                </div>
+
+                <!-- Вопрос 3 -->
+                <div class="question">
+                    <h3>3. Можно ли создавать помехи пешеходам на тротуарах?</h3>
+                    <label>
+                        <input type="radio" name="q3" value="a"> Да, если пешеходы не торопятся
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> Да, но только на пешеходных переходах
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> Нет, это запрещено
+                    </label>
+                    <p class="feedback hidden" id="feedback-q3"></p>
+                </div>
+
+                <!-- Вопрос 4 -->
+                <div class="question">
+                    <h3>4. Какова сумма штрафа за любые нарушения ПДД водителя СИМ?</h3>
+                    <label>
+                        <input type="radio" name="q4" value="a"> 500 ₽
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b"> 800 ₽
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c"> 1000 ₽
+                    </label>
+                    <p class="feedback hidden" id="feedback-q4"></p>
+                </div>
+
+                <!-- Вопрос 5 -->
+                <div class="question">
+                    <h3>5. Каково определение "Темного времени суток"?</h3>
+                    <label>
+                        <input type="radio" name="q5" value="a"> Время от конца вечерних сумерек до начала утренних сумерек
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b"> Время, когда дождь идет
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c"> Промежуток времени, когда светит солнце
+                    </label>
+                    <p class="feedback hidden" id="feedback-q5"></p>
+                </div>
+
+                <!-- Вопрос 6 -->
+                <div class="question">
+                    <h3>6. Дети старше 14 лет могут передвигаться на СИМ по:</h3>
+                    <label>
+                        <input type="radio" name="q6" value="a"> ВТолько по пешеходным зонам
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="b"> Только по тротуарам
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="c"> Велосипедным и велопешеходным дорожкам
+                    </label>
+                    <p class="feedback hidden" id="feedback-q6"></p>
+                </div>
+
+                <!-- Вопрос 7 -->
+                <div class="question">
+                    <h3>7. Разрешено ли перевозить детей до 7 лет на СИМ без специального сиденья?</h3>
+                    <label>
+                        <input type="radio" name="q7" value="a"> Да, это не запрещено
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="b"> Да, если взрослый присутствует
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="c"> Нет, нельзя без оборудованного детского сиденья
+                    </label>
+                    <p class="feedback hidden" id="feedback-q7"></p>
+                </div>
+
+                <!-- Вопрос 8 -->
+                <div class="question">
+                    <h3>8. Разрешено ли передавать управление СИМ другому лицу?</h3>
+                    <label>
+                        <input type="radio" name="q8" value="a"> Да, если рядом нет полиции
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="b"> Нет, если человек в состоянии опьянения или не соответствует возрасту
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="c"> Да, если это знакомый человек<br>
+                    </label>
+                    <p class="feedback hidden" id="feedback-q8"></p>
+                </div>
+
+                <!-- Вопрос 9 -->
+                <div class="question">
+                    <h3>9. Каков размер штрафа за нахождение в общественном месте в состоянии алкогольного опьянения?</h3>
+                    <label>
+                        <input type="radio" name="q9" value="a"> 300—500 ₽
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="b"> 500—1000 ₽
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="c"> 1000—1500 ₽
+                    </label>
+                    <p class="feedback hidden" id="feedback-q9"></p>
+                </div>
+
+                <!-- Вопрос 10 -->
+                <div class="question">
+                    <h3>10. Что означает термин "Пешеходная дорожка"?</h3>
+                    <label>
+                        <input type="radio" name="q10" value="a"> Обустроенная полоса для движения пешеходов, обозначенная знаком 4.5.1
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="b"> Для движения транспортных средств
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="c"> Для велосипедистов
+                    </label>
+                    <p class="feedback hidden" id="feedback-q10"></p>
+                </div>
+
+                <button type="submit" class="button">Проверить результаты</button>
+            </form>
+
+            <div id="results" class="hidden">
+                <h3>Ваш результат:</h3>
+                <p id="score"></p>
+                <a href="choose-test.html" class="button">Выбрать другой тест</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Изучение ПДД для пользователей СИМ. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
